@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rwd 6</title>
+    <link rel="stylesheet" href="website6.css" />
+  </head>
+  <body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+      <div class="imgSidebar">
+        <img src="https://i.postimg.cc/VNGc1Vqn/tutod2.jpg" alt="bg" />
+      </div>
+
+      <div class="contentBx">
+        <h5 class="logoText">My Portfolio</h5>
+        <div>
+          <h4><span>Hello</span> I'm tuti lestari</h4>
+          <h2></h2>
+          <h4>I'm wibu</h4>
+          
+          <a href="#" class="btn">About Me</a>
+        </div>
+        <ul class="sci">
+          <li>
+            <a href="#"><a href="https://www.facebook.com/dani.nadia.355"><img src="imgWeb6/facebook.png" alt="facebook" /></a></a>
+          </li>
+         
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="title white">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="textBx">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In officia deleniti commodi voluptas, labore soluta tempore officiis, maiores nisi nobis, excepturi magnam vel quibusdam adipisci odio veniam. Commodi, debitis aperiam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis asperiores numquam reiciendis provident nesciunt corrupti, sint inventore quas sapiente assumenda ea odio consequuntur, commodi voluptates architecto. Ab dolore
+            culpa error!<br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusamus libero sequi, debitis facere ab provident tempore odio earum, illum consectetur dolores est officia minus, rerum commodi velit
+            qui. Quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, quisquam ullam. Quam adipisci autem, beatae sequi maiores alias nesciunt excepturi quos iusto incidunt expedita inventore repellat enim atque minus
+            dolorem!
+          </p>
+        </div>
+        <div class="imgBx">
+          <img src="https://i.postimg.cc/PJFLwynw/tutod.jpg" alt="bg1" />
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="title">
+        <h2>My hobbies</h2>
+       
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="https://i.postimg.cc/sxcXd7tG/console.png" alt="icon1" />
+          <h2>Playing Games</h2>
+          <p>My first hobbies is Playing Game</p>
+        </div>
+        <div class="servicesBx">
+          <img src="https://i.postimg.cc/FKdvv8fQ/moon.png" alt="icon2" />
+          <h2>Sleeping</h2>
+          <p>My second hobbies is sleep </p>
+        </div>
+        
+      </div>
+    </section>
+
+    
+    <section class="contact" id="contact">
+      <div class="title white">
+        <h2>Contact Us</h2>
+        
+      </div>
+      <div class="contactForm">
+        <div class="row">
+          <div class="col50">
+            <input type="text" name="" placeholder="First Name" />
+          </div>
+          <div class="col50">
+            <input type="text" name="" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col50">
+            <input type="text" name="" placeholder="Email" />
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col100">
+            <textarea placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col100">
+            <input type="submit" value="Send" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>Copyright - 2020 Online Tutorials. All Right Reserved</p>
+    </div>
+
+    <div class="sidebar">
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Hobbies</a></li>
+        
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".toggle");
+        const sidebar = document.querySelector(".sidebar");
+        menuToggle.classList.toggle("active");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
